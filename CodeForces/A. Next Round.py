@@ -1,3 +1,5 @@
+#https://codeforces.com/problemset/problem/158/A
+
 l = input().split(' ')
 contor=0
 scores = input().split(' ')
