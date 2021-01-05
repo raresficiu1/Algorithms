@@ -7,7 +7,6 @@ def solve(string, value,stop):
 
     print(string,value,stop) # pt verificare
     newstring=[]
-
     #oprire cand e gol stringul
     if(len(string)>0):
         #directia in care trebuie toate mutate
@@ -45,7 +44,6 @@ for i in range(tests):
         y.append(each)
     #unique_values=create_space_search(miny,maxy)
 
-
     #print(unique_values)
     if(miny==maxy):
         minim=0
@@ -67,7 +65,5 @@ for i in range(tests):
                 minimaux=solve(k,each1,minim)
                 if(minimaux<minim):
                     minim=minimaux
-
-
 
     print(minim)
