@@ -19,7 +19,7 @@ while bank:
         bills += aux
     elif (bank >= 5):
         aux = bank //5
-        bank -= aux *5
+        bank -= aux * 5
         bills += aux
     else:
         bills+=bank
