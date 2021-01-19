@@ -6,6 +6,7 @@ tests = int(input())
 d=[]
 max=0
 
+#O(n)
 for i in range(tests):
     o = int(input())
     d.append(o)
@@ -16,8 +17,10 @@ solFound=False
 start=1
 primes=[]
 
+
+#O(n**2)
 def primes_sieve1():
-    limitn = 10000
+    limitn = 1000000
     primes = dict()
     for i in range(2, limitn): primes[i] = True
 
@@ -50,7 +53,9 @@ def primes_sieve1():
 
 primes=primes_sieve1()
 
+print(len(primes))
 found=0
+#O(n**3)
 for i in range(len(d)):
     found=False
     for j in range(len(primes)):
