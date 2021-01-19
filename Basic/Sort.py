@@ -1,5 +1,3 @@
-#insertion sort
-
 
 def insertion_sort(list):
 
@@ -20,12 +18,10 @@ def merge_sort(list):
         mid = len(list) // 2
         L = list[:mid]
         R = list[mid:]
-
         merge_sort(L)
         merge_sort(R)
-
         i = j = k = 0
-
+        #print(L,R)
         while i < len(L) and j < len(R):
             if L[i] < R[j]:
                 list[k] = L[i]
@@ -46,5 +42,9 @@ def merge_sort(list):
             k += 1
 
         return list
-print(insertion_sort([5 ,2 ,4 ,6 ,1, 3]))
-print(merge_sort([5 ,2 ,4 ,6 ,1, 3]))
+
+list = [5 ,2 ,4 ,6 ,1, 3]
+print(insertion_sort(list))
+print(merge_sort(list))
+
+
