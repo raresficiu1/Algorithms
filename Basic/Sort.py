@@ -41,10 +41,12 @@ def merge_sort(list):
             j += 1
             k += 1
 
-        return list
+        print(list)
+        #return list
 
 list = [5 ,2 ,4 ,6 ,1, 3]
-print(insertion_sort(list))
-print(merge_sort(list))
+merge_sort(list)
+#print(insertion_sort(list))
+#print(merge_sort(list))
 
 
