@@ -2,7 +2,6 @@
 
 nr= int(input())
 n=[int(i) for i in input().split(' ')]
-
 even=0
 odd=0
 
@@ -12,4 +11,14 @@ for i in n:
     else:
         odd+=1
 
-print(abs(even-odd))
+if(odd>even):
+    for i in range(len(n)):
+        if(n[i]%2==0):
+            print(i+1)
+            break
+else:
+    for i in range(len(n)):
+        if(n[i]%2==1):
+            print(i+1)
+            break
+
