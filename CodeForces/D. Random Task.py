@@ -1,5 +1,5 @@
 #https://codeforces.com/problemset/problem/431/D
-
+#INCOMPLETE
 
 def to_binary(n):
     i=0

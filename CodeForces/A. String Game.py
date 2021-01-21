@@ -5,10 +5,13 @@ initial = list(input())
 
 target= list(input())
 
+# O(n)
+
 a= [int(i) for i in input().split(' ')]
 a_index=[]
 k=0
 
+# O(n)
 for i in range(len(a)):
     a_index.append([initial[i],False,k])
     k+=1
@@ -44,11 +47,11 @@ while(i<len(a) and ok==True):
 
     #updatez indexul
     a_index[a[i]-1][1]=True
-    #print(a_index)
+    print(a_index)
 
     a_current = create_current(a_index)
 
-    #print(create_current(a_index),target,verify(a_current,target),i)
+    print(create_current(a_index),target,verify(a_current,target),i)
 
     #acum verific daca targetul e inclus in a current si daca e inclus fac ok = true altfel opresc
 
