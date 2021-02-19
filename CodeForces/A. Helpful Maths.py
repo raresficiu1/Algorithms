@@ -1,10 +1,12 @@
-#https://codeforces.com/problemset/problem/339/A
+#https://codeforces.com/contest/339/problem/A
 
-tocalculate=input().split('+')
-tocalculate.sort()
-new=''
-for i in tocalculate:
-    new+=i
-    new+='+'
 
-print(new[:-1])
+inputs = [int(i) for i in input().split('+')]
+
+inputs.sort()
+fin=''
+for i in inputs:
+    fin+=str(i)+'+'
+
+print(fin[:-1])
+
